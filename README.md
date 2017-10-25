@@ -1,4 +1,2 @@
 # utils
-misc utils
-
-scholar free
+misc utils, scholar free
