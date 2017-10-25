@@ -28,8 +28,10 @@ hi default link matlabLabel		Label
 syn keyword matlabTodo		TODO	contained
 hi default link matlabTodo	Todo
 "comment{{{1
-syn match matlabComment		"%.*$"	contains=matlabTodo
-hi default link matlabComment	Comment
+syn match matlabOneLineComment		"%.*$"	contains=matlabTodo
+syn region matlabMultiLineComment	start="%{"	end="%}"
+hi default link matlabOneLineComment	Comment
+hi default link matlabMultiLineComment	Comment
 "operator{{{1
 syn match matlabOperator	"\.[*/]"
 syn match matlabOperator	"[-+*/\\]"
