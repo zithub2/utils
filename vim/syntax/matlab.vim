@@ -13,7 +13,7 @@ syn region matlabString		start=+"+ end=+"+	oneline
 hi default link matlabString	String
 "statement{{{1
 "well, i don't know where to put these keywords. so let's put them here.
-syn keyword matlabStatement		return function
+syn keyword matlabStatement		return function endfunction
 hi default link matlabStatement		Statement
 "repeat{{{1
 syn keyword matlabRepeat		do for while end
