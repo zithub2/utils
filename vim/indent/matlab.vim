@@ -39,7 +39,7 @@ function GetMatlabIndent(lnum)
   let curind = indent(plnum)
 
   " If the current line is a stop-block statement...
-  if getline(v:lnum) =~ '^\s*\(end\|else\|elseif\|case\|otherwise\|catch\)\>'
+  if getline(v:lnum) =~ '^\s*\(end\|endfunction\|else\|elseif\|case\|otherwise\|catch\)\>'
     " See if this line does not follow the line right after an openblock
     if getline(plnum) =~ '^\s*\(for\|if\|else\|elseif\|case\|while\|switch\|try\|otherwise\|catch\)\>'
       "do nothing
