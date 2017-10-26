@@ -29,7 +29,7 @@ syn keyword matlabTodo		TODO	contained
 hi default link matlabTodo	Todo
 "comment{{{1
 syn match matlabOneLineComment		"%.*$"	contains=matlabTodo
-syn region matlabMultiLineComment	start="%{"	end="%}"
+syn region matlabMultiLineComment	start="^\s*%{"	end="^\s*%}"
 hi default link matlabOneLineComment	Comment
 hi default link matlabMultiLineComment	Comment
 "operator{{{1
