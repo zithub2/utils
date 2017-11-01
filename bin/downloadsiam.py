@@ -47,7 +47,7 @@ class MyHTMLParser(HTMLParser):
         if self.ispdf and data.startswith("PDF"):
             self.url=[v for (p,v) in self.a_attrs if p=="href"][0]
             print("wget '%s'" % (self.baseurl+self.url,))
-            print("mv '%s' '%s'" % (self.url.split('/')[-1],re.sub("""['"]""","_",self.title+'.pdf')))
+            print("mv '%s' '%s'" % (self.url.split('/')[-1],re.sub("""['"/]""","_",self.title+'.pdf')))
             self.ispdf=False
             self.waitingPDF=False
 
