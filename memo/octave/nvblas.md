@@ -18,15 +18,13 @@ the following steps work for linuxmint. other linux distros can be configured in
       > NVBLAS_AUTOPIN_MEM_ENABLED
       >
       > #See [NVBLAS documentation](http://docs.nvidia.com/cuda/nvblas/index.html) for complete list of options.
-  1. add to your `$HOME/.profile`:
+  1. add to your `$HOME/.bashrc`:
       > export NVBLAS_CONFIG_FILE="$HOME/.nvblas.conf" #set config file<br />
       > alias octave='LD_PRELOAD=libnvblas.so octave'<br />
       > alias octave-cli='LD_PRELOAD=libnvblas.so octave-cli'
       >
       > #in case you use `NVBLAS_CPU_BLAS_LIB libopenblas.so` in `$HOME/.nvblas.conf`<br />
       > #export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/OpenBLAS/lib"
-  1. do one of the following to let changes in `$HOME/.profile` take effect if you are not familiar with terminals:
-      * logout and login again<br />
-      * restart your computer
+  1. open a new terminal(to let changes in `$HOME/.bashrc` take effect if you are not familiar with terminals) and run `octave` or `octave-cli`
 
 now you can enjoy octave with nvblas.
