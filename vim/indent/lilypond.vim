@@ -12,14 +12,23 @@ function! GetLyIndent()
     return 0
   endif
 
-  let ind = indent(plnum)
   let prevline = getline(plnum)
   let curline = getline(v:lnum)
   let swlen = shiftwidth()
-  if prevline =~ '^.*\(<<\|{\)' . '\s*\(%.*\)\?$'
+  let lcpat = '\s*\(%.*\)\?$' "line comment pattern
+
+  if prevline =~ '^\s*#\?(' || prevline =~ ')' . lcpat || curline =~ ')' . lcpat
+    let ind = lispindent(v:lnum)
+  elseif prevline =~ '{' || curline =~ '}'
+    let ind = cindent(v:lnum)
+  else
+    let ind = indent(plnum)
+  endif
+
+  if prevline =~ '<<'
     let ind += swlen
   endif
-  if curline =~ '^\s*\(>>\|}\).*'
+  if curline =~ '>>'
     let ind -= swlen
   endif
 
