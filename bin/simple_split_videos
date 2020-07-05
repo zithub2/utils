@@ -1,0 +1,5 @@
+sec_per_file=60
+for f in $@; do
+  template="${f%.mp4}.%03d.mp4"
+  ffmpeg -i "$f" -c copy -segment_time $sec_per_file -f segment "$template"
+done
