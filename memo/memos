@@ -25,3 +25,10 @@ create a midi file or music score: lilypond
 play a midi file: timidity++ soundfont-fluid
 convert midi to wav, ogg, mp3: timidity++ soundfont-fluid ffmpeg github.com/zithub2/utils/bin/convert_midi.sh
 play with a midi keyboard: qjackctl qsynth soundfont-fluid.
+
+# network
+when arch is installed:
+  systemctl enable dhclient@enp3s0.service
+when the network is connected/reconnected after login:
+  ip link set enp3s0 down
+  ststemctl restart dhclient@enp3s0.service
