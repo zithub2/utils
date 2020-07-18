@@ -1,0 +1,23 @@
+钹	cymca	cymcb	cymra	cymrb	cymch	cyms
+通通鼓	tomfl	tomfh	toml	tomh	tomml	tommh
+康茄鼓	cgho	cghm	cglo	cglm
+高帽	hhc	hho	hhp
+底鼓	bda	bd
+军鼓	sna	sne
+邦戈鼓	boh	bol
+天巴鼓	timh	timl
+锯加鼓	cuio	cuim
+木块	wbh	wbl
+三角铁	trio	trim
+agogo	agoh	agol
+铃	rb	cb
+刮葫	guis	guil
+哨	whs	whl
+沙锤	cab
+砂锤	mar
+拍手	hc
+铃鼓	tamb
+颤音叉	vibs
+响木	cl
+边木	ss
+
