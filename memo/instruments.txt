@@ -1,0 +1,41 @@
+####### 弓弦乐器
+小提琴      Violino(-i)           Vl          violin
+中提琴      Viola(-e)             Vla(-e)     viola
+大提琴      Violoncello(-i)       Vc          cello
+低音提琴    Contrabasso(-i)       Cb          contrabass
+
+####### 木管乐器
+短笛        Piccolo               Picc        piccolo
+长笛        Flauto(-i)            Fl          flute
+双簧管      Oboe(-i)              Ob          oboe
+英国管      Corno inglese         C.ingl      english-horn
+小单簧管    Clarinetto piccolo    Cl.picc
+单簧管      Clarinetto(-i)        Cl          clarinet
+低音单簧管  Clarinetto basso      Cl.b        bass-clarinet
+大管        Fagotto(-i)           Fag         bassoon
+低音大管    Contrafagotto         C.fag       contra-bassoon
+
+####### 铜管乐器
+圆号        Corno(-i)             Cor         French horn
+小号        Tromba(-e)            Trb         trumpet
+长号        Trombone(-i)          Trbn        trombone
+大号        Tuba                  Tub         tuba
+
+####### 色彩乐器
+排钟        Campane               Cmpna       tubular-bells
+钟琴        Campanelli            Cmpli       glockenspiel
+木琴        Silofono              Sil         xylophone
+钢片琴      Celesta               Cel         celesta
+竖琴        Arpa                  Arpa        harp
+钢琴        Piano                 P-no        piano
+
+####### 打击乐器
+定音鼓      Timpani               Timp        timpani
+三角铁      Triangolo             Trg         triangle
+铃鼓        Tamburino             T-no        tambourine
+小鼓        Tamburo               T-ro        side-drum
+响板        Castagnetti           Cst-tti     castanets
+钹          Piatti                P-tti       cymbal
+大鼓        Cassa                 Cassa       bass-drum
+锣          Tam-Tam               T-tam       tam-tam
+
