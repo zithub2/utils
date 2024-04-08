@@ -1,0 +1,60 @@
+body {
+  line-height: 4ex;
+  background: silver;
+  counter-reset: section 0;
+}
+
+html2 {
+  display: block;
+  font-size: 24px;
+  width: 100%;
+  border-top: 1px dashed;
+}
+
+title {
+}
+
+section::before {
+  counter-increment: section 1;
+  content: counter(section, trad-chinese-informal) "：";
+}
+
+section {
+  display: block;
+  text-align: center;
+  background: aqua;
+  font-size: 30px;
+  padding: 1em 0em 1em;
+}
+
+idee {
+  color: teal;
+}
+
+table, tr, td, th {
+  border: 1px solid;
+}
+
+ol {
+  padding-inline-start: 3em;
+  list-style-type: cjk-ideographic;
+}
+
+dcode {
+  display: block;
+  font-family: monospace;
+  width: calc(100% - 1ex - 2*2em);
+  border-left: 1ex solid black;
+  padding: 1ex 2em 1ex;
+  color: white;
+  background-color: dimgray;
+}
+
+code {
+  padding-left: 1ex;
+  padding-right: 1ex;
+  margin-left: 1ex;
+  margin-right: 1ex;
+  color: white;
+  background-color: dimgray;
+}
